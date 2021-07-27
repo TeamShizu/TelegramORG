@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# (c) Shrimadhav U K | @ZauteKm
+# (c) TeamShizu | @Mr_Rasiyaa
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published by
@@ -69,18 +69,18 @@ def start(update, context):
     update.message.reply_text(
         Config.START_TEXT,
         parse_mode=ParseMode.HTML,
-        # (c) @ZauteKm
+        # (c) @ShizuUpdates
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('⚠️ Disclaimer', url='https://t.me/ZauteKm/353'),
-                    InlineKeyboardButton('Source 🙄', url='https://t.me/iZaute/7')
+                    InlineKeyboardButton('⚠️ Disclaimer', url='https://t.me/ShizuSupport_Official/46'),
+                    InlineKeyboardButton('Source 🙄', url='https://t.me/ShizuUpdates')
               ],[
-                    InlineKeyboardButton('🤖 Bot Lists', url='https://t.me/iZaute/8'),
-                    InlineKeyboardButton('👥 Group', url='https://t.me/iZaute/5'),
-                    InlineKeyboardButton('Channel 📢', url='https://t.me/iZaute/6')
+                    InlineKeyboardButton('🤖 Bot Lists', url='https://t.me/ShizuUpdates/584'),
+                    InlineKeyboardButton('👥 Group', url='https://t.me/ShizuUpdates'),
+                    InlineKeyboardButton('Channel 📢', url='https://t.me/ShizuSupport_Official')
               ],[
-                    InlineKeyboardButton('⚜️ Subscribe Now YouTube ⚜️', url='https://youtube.com/c/ZauteKm')
+                    InlineKeyboardButton('⚜️ Subscribe Now YouTube ⚜️', url='https://youtube.com/c/MrRGYT')
                ]
             ]
         )
@@ -183,14 +183,14 @@ def input_tg_code(update, context):
                 reply_markup=InlineKeyboardMarkup(
                     [
                          [
-                               InlineKeyboardButton('⚠️ Disclaimer', url='https://t.me/ZauteKm/353'),
-                               InlineKeyboardButton('Source 🙄', url='https://t.me/iZaute/7')
+                               InlineKeyboardButton('⚠️ Disclaimer', url='https://t.me/ShizuSupport_Official/46'),
+                               InlineKeyboardButton('Source 🙄', url='https://t.me/ShizuUpdates')
                        ],[
-                               InlineKeyboardButton('🤖 Bot Lists', url='https://t.me/iZaute/8'),
-                               InlineKeyboardButton('👥 Group', url='https://t.me/iZaute/5'),
-                               InlineKeyboardButton('Channel 📢', url='https://t.me/iZaute/6')
+                               InlineKeyboardButton('🤖 Bot Lists', url='https://t.me/ShizuUpdates/584'),
+                               InlineKeyboardButton('👥 Group', url='https://t.me/ShizuUpdates'),
+                               InlineKeyboardButton('Channel 📢', url='https://t.me/ShizuSupport_Official')
                        ],[
-                               InlineKeyboardButton('⚜️ Subscribe Now YouTube ⚜️', url='https://youtube.com/c/ZauteKm')
+                               InlineKeyboardButton('⚜️ Subscribe Now YouTube ⚜️', url='https://youtube.com/c/MrRGYT')
                         ]
                     ]
                 )
@@ -256,7 +256,7 @@ def main():
             port=Config.PORT,
             url_path=Config.TG_BOT_TOKEN
         )
-        # https://t.me/MarieOT/22915
+        # https://t.me/ShizuUpdates
         updater.bot.set_webhook(url=Config.URL + Config.TG_BOT_TOKEN)
     else:
         updater.start_polling()
