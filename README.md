@@ -9,7 +9,7 @@ please treat your APP ID and API HASH with care, and ensure that they do not fal
 
 - can be found on [Telegram](https://telegram.dog/MyTelegramORG_herobot)
 
-🙄 [@ScrapMan](https://telegram.dog/sMyTelegramORG_herobot) **is the only Telegram RoBot, which is using this repository code**. 🙄😬
+🙄 [@Shizu](https://telegram.dog/MyTelegramORG_herobot) **is the only Telegram RoBot, which is using this repository code**. 🙄😬
 __For any other bots, ask the respective bot developers, for the source code, before sending **any private credentials*" to the bots__.
 
 ## Frequently Asked Questions
@@ -59,7 +59,7 @@ pip install -r requirements.txt
 python3 bot.py
 ```
 
-## [@ScrapMan](https://telegram.dog/MyTelegramORG_herobot)
+## [@Shizu](https://telegram.dog/MyTelegramORG_herobot)
 
 - Only `TG_BOT_TOKEN` environment variables is mandatory.
 - The Telegram RoBot should work without setting the non-mandatory variables.
