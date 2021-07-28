@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# Copyright (c) TeamShizu | Mr_Rasiyaa
+# Copyright (c) TeamShizu
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published by
@@ -18,7 +18,6 @@
 """ STEP FIVE """
 
 import logging
-import re
 
 
 # Enable logging
@@ -29,12 +28,16 @@ logging.basicConfig(
 LOGGER = logging.getLogger(__name__)
 
 
-def parse_to_meaning_ful_text(in_dict):
+def parse_to_meaning_ful_text(input_phone_number, in_dict):
     """ convert the dictionary returned in STEP FOUR
     into Telegram HTML text """
     me_t = ""
-    me_t += "<b><u>App Configuration</u></b>"
-    me_t += "\n\n"
+    me_t += "<i>Phone Number</i>: "
+    me_t += f"<u>{input_phone_number}</u>"
+    me_t += "\n"
+    me_t += "\n"
+    me_t += "<i>App Configuration</i>"
+    me_t += "\n"
     me_t += "<b>APP ID</b>: "
     me_t += "<code>{}</code>".format(in_dict["App Configuration"]["app_id"])
     me_t += "\n"
@@ -42,8 +45,8 @@ def parse_to_meaning_ful_text(in_dict):
     me_t += "<code>{}</code>".format(in_dict["App Configuration"]["api_hash"])
     me_t += "\n"
     me_t += "\n"
-    me_t += "<b><u>Available MTProto Servers</u></b>"
-    me_t += "\n\n"
+    me_t += "<i>Available MTProto Servers</i>"
+    me_t += "\n"
     me_t += "<b>Production Configuration</b>: "
     me_t += "<code>{}</code> <u>{}</u>".format(
         in_dict["Available MTProto Servers"]["production_configuration"]["IP"],
@@ -57,8 +60,8 @@ def parse_to_meaning_ful_text(in_dict):
     )
     me_t += "\n"
     me_t += "\n"
-    me_t += "<b>Disclaimer</b>: "
-    me_t += "<b><u>{}</u></b>".format(
+    me_t += "<i>Disclaimer</i>: "
+    me_t += "<u>{}</u>".format(
         in_dict["Disclaimer"]
     )
     return me_t
@@ -102,7 +105,9 @@ def get_phno_imn_ges(ptb_message):
         if len(ptb_message.entities) > 0:
             for c_entity in ptb_message.entities:
                 if c_entity.type == "phone_number":
-                    my_telegram_ph_no = ptb_message.text[c_entity.offset:c_entity.length]
+                    my_telegram_ph_no = ptb_message.text[
+                        c_entity.offset:c_entity.length
+                    ]
         else:
             my_telegram_ph_no = ptb_message.text
     elif ptb_message.contact is not None:
@@ -110,3 +115,20 @@ def get_phno_imn_ges(ptb_message):
         if ptb_message.contact.phone_number != "":
             my_telegram_ph_no = ptb_message.contact.phone_number
     return my_telegram_ph_no
+
+
+def compareFiles(first, second):
+    """ this code was copied
+    line for line from
+    https://github.com/DrKLO/Telegram/blob/7fb9f0b85621940e0a5ba977278f6f27fc323046/apkdiff.py#L4
+    """
+    while True:
+        firstBytes = first.read(4096)
+        secondBytes = second.read(4096)
+        if firstBytes != secondBytes:
+            return False
+        if firstBytes == b"":
+            break
+    return True
+
+

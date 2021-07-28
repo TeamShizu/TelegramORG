@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# Copyright (c) TeamShizu | Mr_Rasiyaa
+# Copyright (c) TeamShizu
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published by
@@ -30,7 +30,7 @@ def create_new_tg_app(
         app_platform,
         app_desc
 ):
-    #pylint: disable-msg=too-many-arguments
+    # pylint: disable-msg=too-many-arguments
     """ creates a new my.telegram.org/apps
     using the provided parameters """
     request_url = "https://my.telegram.org/apps/create"
