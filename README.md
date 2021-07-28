@@ -7,9 +7,9 @@ please treat your APP ID and API HASH with care, and ensure that they do not fal
 
 **Telegram said**: __It is forbidden to pass this value to third parties__.
 
-- can be found on [Telegram](https://telegram.dog/scrapmanbot)
+- can be found on [Telegram](https://telegram.dog/MyTelegramORG_herobot)
 
-🙄 [@ScrapMan](https://telegram.dog/scrapmanbot) **is the only Telegram RoBot, which is using this repository code**. 🙄😬
+🙄 [@ScrapMan](https://telegram.dog/sMyTelegramORG_herobot) **is the only Telegram RoBot, which is using this repository code**. 🙄😬
 __For any other bots, ask the respective bot developers, for the source code, before sending **any private credentials*" to the bots__.
 
 ## Frequently Asked Questions
@@ -29,12 +29,12 @@ __For any other bots, ask the respective bot developers, for the source code, be
 
 - clone the repository, locally.
 ```sh
-git clone https://github.com/mrismanaziz/Scrap-Man.git
+git clone https://github.com/TeamShizu/TelegramORG.git
 ```
 
 - change the directory.
 ```sh
-cd MyTelegramOrgRoBot
+cd TelegramORG
 ```
 
 - create a virtual environment.
@@ -59,25 +59,17 @@ pip install -r requirements.txt
 python3 bot.py
 ```
 
-## [@ScrapMan](https://telegram.dog/scrapmanbot)
+## [@ScrapMan](https://telegram.dog/MyTelegramORG_herobot)
 
 - Only `TG_BOT_TOKEN` environment variables is mandatory.
 - The Telegram RoBot should work without setting the non-mandatory variables.
-- Please report any issues to the support group: [@SharingUserbot](https://t.me/SharingUserbot)
+- Please report any issues to the support group: [@ShizuUpdates](https://t.me/ShizuUpdates)
 
 
 ## learning
 
-check out the [helper_funcs](https://github.com/mrismanaziz/Scrap-Man/tree/master/helper_funcs) directory, to see how my.telegram.org is scrapped.
+check out the [helper_funcs](https://github.com/TeamShizu/TelegramORG/tree/master/helper_funcs) directory, to see how my.telegram.org is scrapped.
 
 ## LICENSE
-[AGPLv3](https://github.com/mrismanaziz/Scrap-Man/blob/master/LICENSE)
+[AGPLv3](https://github.com/TeamShizu/TeamShizu/TelegramORG/blob/master/LICENSE)
 
-## credits
-
-- Libraries Used:
-  - [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)
-  - [requests](https://github.com/psf/requests)
-  - [beautifulsoup4](https://pypi.org/project/beautifulsoup4)
-- Thanks to:
-  - [me](https://tx.me/mrismanaziz)
