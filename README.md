@@ -1,29 +1,40 @@
-# MyTelegramORG
+# MyTelegramOrgRoBot
 
 ~~(yet)~~ another my.telegram.org scrapper inside Telegram.
 
-- can be found on [Telegram](http://t.me/MyTelegramORG_herobot)
+### ⚠ legal DISclaimER 🚸
+please treat your APP ID and API HASH with care, and ensure that they do not fall into wrong hands.
+
+**Telegram said**: __It is forbidden to pass this value to third parties__.
+
+- can be found on [Telegram](https://telegram.dog/scrapmanbot)
+
+🙄 [@ScrapMan](https://telegram.dog/scrapmanbot) **is the only Telegram RoBot, which is using this repository code**. 🙄😬
+__For any other bots, ask the respective bot developers, for the source code, before sending **any private credentials*" to the bots__.
+
+## Frequently Asked Questions
+
+- Should you Trust this bot?
+  - **NO**. __you should never sent any of your private credentials to unknown third-party Telegram Bots__. This bot / source code was an attempt to scrap `my.telegram.org` using `Python3` libraries.
+
 
 ## installing
 
-## Deploy 
+#### The Easy Way
 
-<b>Deploy on Heroku</b>
-<p align="left">
-  <a href="https://heroku.com/deploy?template=https://github.com/TeamShizu/TelegramORG">
-     <img height="30px" src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku">
-  </a>
-</p>
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-##Deploy in your VPS
+
+#### The Legacy Way
+
 - clone the repository, locally.
 ```sh
-git clone https://gitHub.com/TeamShizu/TelegramORG.git
+git clone https://github.com/mrismanaziz/Scrap-Man.git
 ```
 
 - change the directory.
 ```sh
-cd TelegramORG
+cd MyTelegramOrgRoBot
 ```
 
 - create a virtual environment.
@@ -48,17 +59,25 @@ pip install -r requirements.txt
 python3 bot.py
 ```
 
-## [@Support group](https://t.me/ShizuUpdates)
+## [@ScrapMan](https://telegram.dog/scrapmanbot)
 
 - Only `TG_BOT_TOKEN` environment variables is mandatory.
 - The Telegram RoBot should work without setting the non-mandatory variables.
-- Please report any issues to the support group: [@Shizu](https://t.me/ShizuUpdates)
+- Please report any issues to the support group: [@SharingUserbot](https://t.me/SharingUserbot)
 
 
 ## learning
 
-check out the [helper_funcs](https://github.com/TeamShizu/TelegramORG/tree/master/helper_funcs) directory, to see how my.telegram.org is scrapped.
+check out the [helper_funcs](https://github.com/mrismanaziz/Scrap-Man/tree/master/helper_funcs) directory, to see how my.telegram.org is scrapped.
 
 ## LICENSE
-[AGPLv3](https://github.com/TeamShizuTelegramORG/tree/master/LICENSE)
+[AGPLv3](https://github.com/mrismanaziz/Scrap-Man/blob/master/LICENSE)
 
+## credits
+
+- Libraries Used:
+  - [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)
+  - [requests](https://github.com/psf/requests)
+  - [beautifulsoup4](https://pypi.org/project/beautifulsoup4)
+- Thanks to:
+  - [me](https://tx.me/mrismanaziz)
