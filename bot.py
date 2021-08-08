@@ -217,7 +217,7 @@ def go_heck_verification(update, context):
 def main():
     """ Initial Entry Point """
     # Create the Updater and pass it your bot's token.
-    updater = Updater(Config.TG_BOT_TOKEN)
+    updater = Updater(sample_config.TG_BOT_TOKEN)
 
     # Get the dispatcher to register handlers
     tg_bot_dis_patcher = updater.dispatcher
