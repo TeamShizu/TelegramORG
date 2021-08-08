@@ -4,7 +4,8 @@ This Is An APP ID & HASH GENERATOR BOT. I Can Help You Get Your Telegram APP ID 
 
 Enter your phone number with country code(example:-+94761234643)
 to Get The APP-ID From my.telegram.org 
-* Join our channel to use bot * https://t.me/ShizuSupport_Official
+
+⭕ Join our channel to use bot ~ https://t.me/ShizuSupport_Official ⭕
 \n\n Press /start At Any Stage To Re-Enter Your Details If You Perhaps Made Some Mistake. Made by @ShizuUpdates"""
     AFTER_RECVD_CODE_TEXT = """A Verification Code sent to you by Telegram. Enter that Verification Code Or Forward That Verification Message.😁🙏
 """
