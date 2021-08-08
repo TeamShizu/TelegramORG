@@ -50,7 +50,7 @@ def start(update, context):
     update.message.reply_text(
         Config.START_TEXT.format(message.from_user.first_name,message.from_user.id),
         
-        parse_mode="markdown",
+        parse_mode=ParseMode.HTML,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
