@@ -48,30 +48,10 @@ GLOBAL_USERS_DICTIONARY = {}
 def start(update, context):
     """ ConversationHandler entry_point /start """
     update.message.reply_text(
-        Config.START_TEXT.format(message.from_user.first_name,message.from_user.id),
-        
-        parse_mode=ParseMode.HTML,
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "☢️Disclamer☢️", url=f"https://t.me/ShizuSupport_Official/123")],
-                [
-                    InlineKeyboardButton(
-                        "👥 Group", url=f"https://t.me/ShizuUpdates"), 
-                    InlineKeyboardButton(
-                        "Channel 📢", url=f"https://t.me/ShizuSupport_Official")
-                ],[
-                    InlineKeyboardButton(
-                        "🔥 Source Code 🔥", url=f"https://ShizuLogos")
-                ]
-            ]
-        ),
-       )
-        
-       
-    
-    return INPUT_PHONE_NUMBER
+        Config.START_TEXT,
+        parse_mode=ParseMode.HTML
+        )
+        return INPUT_PHONE_NUMBER
 
 
 def input_phone_number(update, context):
