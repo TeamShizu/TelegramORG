@@ -50,8 +50,8 @@ def start(update, context):
     update.message.reply_text(
         Config.START_TEXT,
         parse_mode=ParseMode.HTML
-        )
-        return INPUT_PHONE_NUMBER
+    )
+    return INPUT_PHONE_NUMBER
 
 
 def input_phone_number(update, context):
