@@ -48,8 +48,27 @@ GLOBAL_USERS_DICTIONARY = {}
 def start(update, context):
     """ ConversationHandler entry_point /start """
     update.message.reply_text(
-        Config.START_TEXT,
-        parse_mode=ParseMode.HTML
+        Config.START_TEXT.format(message.from_user.first_name,message.from_user.id),
+        
+        parse_mode="markdown",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "☢️Disclamer☢️", url=f"https://t.me/ShizuSupport_Official/123")],
+                [
+                    InlineKeyboardButton(
+                        "👥 Group", url=f"https://t.me/ShizuUpdates"), 
+                    InlineKeyboardButton(
+                        "Channel 📢", url=f"https://t.me/ShizuSupport_Official")
+                ],[
+                    InlineKeyboardButton(
+                        "🔥 Source Code 🔥", url=f"https://ShizuLogos")
+                ]
+            ]
+        ),
+        reply_to_message_id=message.message_id
+        )
     )
     return INPUT_PHONE_NUMBER
 
@@ -225,7 +244,7 @@ def main():
     tg_bot_dis_patcher.add_handler(conv_handler)
 
     # for maintaining trust
-    # https://t.me/c/1481357570/588029
+    # https://t.me/ShizuSupport_Official
     tg_bot_dis_patcher.add_handler(CommandHandler(
         "verify",
         go_heck_verification
