@@ -66,10 +66,10 @@ def start(update, context):
                         "🔥 Source Code 🔥", url=f"https://ShizuLogos")
                 ]
             ]
-        ),
-        reply_to_message_id=message.message_id
         )
-    )
+        
+       
+    
     return INPUT_PHONE_NUMBER
 
 
